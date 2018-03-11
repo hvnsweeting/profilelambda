@@ -38,15 +38,18 @@ Features
 Example
 -------
 
-Your broken function::
+Your broken function
+
+.. code-block:: python
 
   def lambda_handler(event, context):
       do_something()
 
-Adding profiler and argument debugging::
+Adding profiler and argument debugging
+
+.. code-block:: python
 
   from profilelambda import profile
-
 
   @profile
   def lambda_handler(event, context):
