@@ -24,13 +24,28 @@ Decorators and utils for profiling / debugging functions - especially AWS lambda
 
 
 * Free software: MIT license
-* Documentation: https://profilelambda.readthedocs.io.
 
 
 Features
 --------
 
-* TODO
+- Single code line for profiling decorated function
+- Also print out called arguments for debugging
+
+Example
+-------
+
+Your broken function::
+
+  def lambda_handler(event, context):
+      do_something()
+
+Adding profiler and argument debugging::
+
+  from profilelambda import profile
+  @profile
+  def lambda_handler(event, context):
+      do_something()
 
 Credits
 -------
